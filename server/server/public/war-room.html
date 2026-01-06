@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Morning_Starr – War-Room</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/war.css">
+</head>
+<body>
+  <header>
+    <h1>MORNING_STARR <span>WAR-ROOM</span></h1>
+    <div id="stats">
+      <span id="visitors">0</span> VISITEURS
+      <span id="latency">0</span> ms
+    </div>
+  </header>
+
+  <main>
+    <section id="feed">
+      <h2>Live Feed</h2>
+      <div id="log"></div>
+    </section>
+
+    <aside id="panel">
+      <h2>Remote Control</h2>
+      <button data-cmd="toggleTheme">Toggle Theme</button>
+      <button data-cmd="alert">Alert</button>
+      <button data-cmd="redirect">Redirect</button>
+      <textarea id="cssInject" placeholder="CSS brut à injecter"></textarea>
+      <button data-cmd="css">Inject CSS</button>
+    </aside>
+  </main>
+
+  <script type="module" src="assets/js/war.js"></script>
+</body>
+</html>
